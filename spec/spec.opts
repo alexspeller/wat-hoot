@@ -1,0 +1,1 @@
+--require ./lib/hoot --format Hoot --colour
