@@ -14,11 +14,11 @@ In your `Gemfile`:
 
 In your `.rspec` or `spec.opts`:
 
-    --require hoot --format Hoot
+    --require hoot --format Hoot::Formatter
 
 ## Compatibility
 
-Hoot works with both RSpec 1 (`Hoot` will reference `Spec::Hoot`) and RSpec 2 (`Hoot` will reference `RSpec::Hoot`).
+Hoot works with both RSpec 1 (`Hoot` will reference `Hoot::Spec::Formatter`) and RSpec 2 (`Hoot` will reference `Hoot::RSpec::Formatter`).
 
 ## License
 

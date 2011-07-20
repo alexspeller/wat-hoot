@@ -1,9 +1,5 @@
-$:.unshift(File.dirname(__FILE__))
+require 'growl'
 
-Hoot = if defined?(RSpec)
-  require 'rspec/hoot'
-  RSpec::Hoot
-else
-  require 'spec/hoot'
-  Spec::Hoot
+module Hoot
+  autoload :Formatter, 'hoot/formatter'
 end

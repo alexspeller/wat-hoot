@@ -1,1 +1,1 @@
---require ./lib/hoot --format Hoot --colour
+--require ./lib/hoot --format Hoot::Formatter --colour
