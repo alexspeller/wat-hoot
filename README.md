@@ -2,7 +2,7 @@
 
 Hoot is an RSpec formatter based on the standard [progress formatter]() but is designed to show you spec failures *as and when they happen* rather than having to wait until the end of the spec run.
 
-If you have [Growl]() installed, it will also display notifications when specs fail.
+If you have [Growl]() and the `growlnotify` extra installed, it will also display notifications when specs fail.
 
 ## Installation
 
@@ -12,12 +12,13 @@ In your `Gemfile`:
 
 ## Usage
 
-In your `.rspec`:
+In your `.rspec` or `spec.opts`:
 
     --require hoot --format Hoot
 
-  [progress formatter]: https://github.com/rspec/rspec-core/blob/master/lib/rspec/core/formatters/progress_formatter.rb
-  [Growl]: http://growl.info
+## Compatibility
+
+Hoot works with both RSpec 1 (`Hoot` will reference `Spec::Hoot`) and RSpec 2 (`Hoot` will reference `RSpec::Hoot`).
 
 ## License
 
@@ -31,4 +32,7 @@ Redistribution and use in source and binary forms, with or without modification,
   Neither the name of the Nature Publishing Group nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+  [progress formatter]: https://github.com/rspec/rspec-core/blob/master/lib/rspec/core/formatters/progress_formatter.rb
+  [Growl]: http://growl.info
 
