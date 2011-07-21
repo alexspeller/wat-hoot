@@ -7,8 +7,10 @@ Gem::Specification.new do |s|
   s.email = "no-reply@nature.com"
   s.files = [
     "lib/hoot.rb",
-    "lib/rspec/hoot.rb",
-    "lib/spec/hoot.rb",
+    "lib/hoot/base.rb",
+    "lib/hoot/formatter.rb",
+    "lib/hoot/rspec/formatter.rb",
+    "lib/hoot/spec/formatter.rb",
     "README.md"
   ]
   s.add_dependency("growl", "~> 1.0.3")
